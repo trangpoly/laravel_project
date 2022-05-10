@@ -28,3 +28,7 @@ Route::get('/login', [LoginCotroller::class, 'index']);
 Route::get('/cart', [CartController::class, 'index']);
 
 Route::get('/admin', [AdminController::class, 'index']);
+
+Route::get('/admin/login', [AdminController::class, 'login']);
+
+Route::get('/admin/table', [AdminController::class, 'table']);
